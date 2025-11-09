@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+   <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                Shubham Jewellers
+            </a>
+            <div class="navbar-icons ms-auto d-flex align-items-center">
+                
+                <button class="nav-icon position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#notificationsPanel" aria-controls="notificationsPanel">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle" id="notification-dot">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </button>
+
+                <a href="login.html" class="nav-icon">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+                
+               
+
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+            </div>
+
+        </div>
+    </nav>
+<!-----------menu-icon---------->
+    <div class="collapse" id="mainMenu">
+        <div class="menu-list">
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-gem"></i> Necklace
+            </a>
+            <a href="ring.html" class="menu-item">
+                <i class="fa-solid fa-ring"></i> Ring
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-line"></i> Rates
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-border-all"></i> Products
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-phone"></i> Contact
+            </a>
+        </div>
+    </div>
+<!------------notification------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationsPanel" aria-labelledby="notificationsPanelLabel">
+        <div class="offcanvas-header">
+            <h5 id="notificationsPanelLabel">Notifications</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">New Collection Arrived!</h6>
+                        <small>Just now</small>
+                    </div>
+                    <p class="mb-1">Check out the new 'Royale' necklace set.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">Payment Successful</h6>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <p class="mb-1">Your order #SJ12345 has been confirmed.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">Price Drop Alert</h6>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Prices for 22k Gold are down by 1%.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

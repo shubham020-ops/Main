@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Jewellers - Finest Jewellery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-------------navbar----------->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                Shubham Jewellers
+            </a>
+            <div class="navbar-icons ms-auto d-flex align-items-center">
+                
+                <button class="nav-icon position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#notificationsPanel" aria-controls="notificationsPanel">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle" id="notification-dot">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </button>
+
+                <a href="login.html" class="nav-icon">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+                
+               
+
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+            </div>
+
+        </div>
+    </nav>
+<!-----------menu-icon---------->
+    <div class="collapse" id="mainMenu">
+        <div class="menu-list">
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="ring.html" class="menu-item">
+                <i class="fa-solid fa-gem"></i> Necklace
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-ring"></i> Ring
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-line"></i> Rates
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-border-all"></i> Products
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-phone"></i> Contact
+            </a>
+        </div>
+    </div>
+<!------------notification------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationsPanel" aria-labelledby="notificationsPanelLabel">
+        <div class="offcanvas-header">
+            <h5 id="notificationsPanelLabel">Notifications</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">New Collection Arrived!</h6>
+                        <small>Just now</small>
+                    </div>
+                    <p class="mb-1">Check out the new 'Royale' necklace set.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">Payment Successful</h6>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <p class="mb-1">Your order #SJ12345 has been confirmed.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">Price Drop Alert</h6>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Prices for 22k Gold are down by 1%.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-----------slider----------->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Jewellery 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Jewellery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Jewellery 3">
+            </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+<!---------Heading---------->
+    <section class="container text-center my-4 py-3">
+        <h1 class="section-title">Elegance Redefined ✨</h1>
+        <p class="lead" style="color: var(--color-accent2);">Discover timeless beauty crafted with passion. Every piece tells a story.</p>
+    </section>
+<!--------scroll-button--------->
+    <section class="category-scroller">
+        <div class="scroller-container">
+            <a href="ring.html"><button class="btn category-btn" >Ring</button></a>
+           <a href="Necklace.html" ><button class="btn category-btn">Necklace</button>
+           </a>
+           <a href="pearl.html"> <button class="btn category-btn">Pearl</button></a>
+           <button class="btn category-btn">Nose Ring</button>
+           <a href="Payal.html"><button class="btn category-btn">Payal</button></a>
+           <a href="bendi.index.html"> <button class="btn category-btn">Bindi</button></a>
+           
+        </div>
+    </section>
+<!-------product-cards---------->
+    <section class="container my-4 py-3" id="products">
+        <h2 class="section-title text-center mb-4">Our Bestsellers 💎</h2>
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="product-name">Diamond Solitaire</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹45,000</span>
+                            <span class="original-price">₹50,000</span> (10% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> (4.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/gold-ring2-design-4.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="product-name">Gold Necklace</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹1,20,000</span>
+                            <span class="original-price">₹1,25,000</span> (4% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> (5.0)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="product-name">Pearl Earrings</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹12,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> (3.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/gold-ring2-design-4.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="product-name">Gold Necklace</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹1,20,000</span>
+                            <span class="original-price">₹1,25,000</span> (4% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> (5.0)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="product-name">Pearl Earrings</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹12,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> (3.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="product-name">Diamond Solitaire</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹45,000</span>
+                            <span class="original-price">₹50,000</span> (10% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> (4.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/gold-ring2-design-4.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="product-name">Gold Necklace</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹1,20,000</span>
+                            <span class="original-price">₹1,25,000</span> (4% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> (5.0)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="product-name">Pearl Earrings</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹12,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> (3.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/gold-ring2-design-4.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="product-name">Gold Necklace</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹1,20,000</span>
+                            <span class="original-price">₹1,25,000</span> (4% off)
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> (5.0)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="product-name">Pearl Earrings</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹12,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> (3.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/ring3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="product-name">Pearl Earrings</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹12,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> (3.5)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="product-card">
+                    <img src="/img/necklace_MIXBG2_2000x.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="product-name">Silver Payal</h5>
+                        <div class="product-price">
+                            <span class="current-price">₹8,500</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> (4.0)
+                        </div>
+                        <button class="btn btn-buy w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+<!----------Heading------------>
+    <section class="container my-4 py-3 text-center">
+        <h2 class="section-title mb-4">Our Craftsmanship 🎥</h2>
+        <!--------video-------->
+        <div class="ratio ratio-16x9">
+            <iframe src="/img/VID_20251025221757.mp4" title="Video" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="container my-4 py-3">
+        <h2 class="section-title text-center mb-4">Today's Rates 📈</h2>
+        <div class="rate-card-container">
+            <div class="rate-card">
+                <h5><i class="fa-solid fa-coins"></i> Gold (24K)</h5>
+                <p class="rate-price">₹ 65,000 <span class="text-muted">/ 10g</span></p>
+                <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +₹150</small>
+            </div>
+            <div class="rate-card">
+                <h5><i class="fa-solid fa-database"></i> Silver (Pure)</h5>
+                <p class="rate-price">₹ 850 <span class="text-muted">/ 10g</span></p>
+                <small class="text-danger"><i class="fa-solid fa-arrow-down"></i> -₹10</small>
+            </div>
+        </div>
+        <p class="text-center text-muted small mt-2">Rates are indicative and subject to change. (Ye rates abhi static hain, live rates ke liye backend API lagega)</p>
+    </section>
+
+    <section class="container my-4 py-3">
+        <h2 class="section-title text-center mb-4">About Shubham Jewellers</h2>
+        <p class="text-center" style="color: var(--color-accent2);">
+            2003 se vishwaas aur shudhhta ka prateek. Shubham Jewellers aapke har khaas mauke ko aur bhi yaadgaar banane ke liye samarpit hai. Humare karigar behtareen design aur anokhi kalaakriti se aapke liye anmol gehne banate hain.
+        </p>
+    </section>
+
+    <section class="container my-4 py-3">
+        <h2 class="section-title text-center mb-4">Customer Love ❤️</h2>
+        <div id="feedbackSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center feedback-item">
+                    <p class="fst-italic">"Inki design sabse alag hai. Mujhe meri engagement ring bahut pasand aayi!"</p>
+                    <strong>- Priya Sharma</strong>
+                </div>
+                <div class="carousel-item text-center feedback-item">
+                    <p class="fst-italic">"Best customer service aur 100% pure gold. Highly recommended."</p>
+                    <strong>- Rohan Gupta</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-4 text-center gsap-section">
+        <h2 class="section-title">A Legacy of Trust</h2>
+        <p>Animations yahan add honge</p>
+        <img src="https://images.pexels.com/photos/230281/pexels-photo-230281.jpeg?auto=compress&cs=tinysrgb&w=400" alt="GSAP Image 1" class="gsap-img">
+        <img src="https://images.pexels.com/photos/168925/pexels-photo-168925.jpeg?auto=compress&cs=tinysrgb&w=400" alt="GSAP Image 2" class="gsap-img">
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="container text-center">
+            <h4 class="footer-logo">Shubham Jewellers</h4>
+            <p>Crafting memories, one jewel at a time.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="copyright">&copy; 2025 Shubham Jewellers. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
